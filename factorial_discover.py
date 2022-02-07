@@ -1,9 +1,9 @@
 xi = int(input('x! = '))
-n = 0
+n = m = 1
 while n < xi:
-    n += 1
-    xi /= n
-if xi == 1:
-    print(f'x = {n}')
+    m += 1
+    n *= m
+if n == xi:
+    print(f'x = {m}')
 else:
     print('Ø')
