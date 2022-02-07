@@ -1,3 +1,5 @@
+from time import sleep
+from os import system
 print("calculadora de horários")
 operacao = input("+ ou -? ")
 while operacao == "+":
@@ -27,7 +29,7 @@ while operacao == "+":
     while somah > 23:
         somad = somad + 1
         somah = somah - 24
-    print(somad,'dias',somah,':',somamin,':',somaseg)
+    print(somad,'dia(s)',somah,':',somamin,':',somaseg)
     break
 while operacao == "-":
     while True:
@@ -56,5 +58,21 @@ while operacao == "-":
     while somah < 0:
         somad = somad - 1
         somah = somah + 24
-    print(somad,'dias',somah,':',somamin,':',somaseg)
+    print(somad,'dia(s)',somah,':',somamin,':',somaseg)
     break
+input('Iniciar timer -> ')
+while (somad > 0) or (somah > 0) or (somamin > 0) or (somaseg > 0):
+    system("clear")
+    print(somad,'dia(s)',somah,':',somamin,':',somaseg)
+    somaseg -= 1
+    if somaseg < 0:
+        somamin = somamin - 1
+        somaseg = somaseg + 60
+    if somamin < 0:
+        somah = somah - 1
+        somamin = somamin + 60
+    if somah < 0:
+        somad = somad - 1
+        somah = somah + 24
+    sleep(1)
+print('Acabou!')
