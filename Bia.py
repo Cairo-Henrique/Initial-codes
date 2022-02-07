@@ -7,7 +7,7 @@ while True:
         print('Olá! Mande foto do cartão do papai e mamãe!')
     elif ('depositar' in msg) or ('deposito' in msg) or ('transferir' in msg) or ('saque' in msg) or ('retirar' in msg):
         print('https://banco.bradesco/html/classic/produtos-servicos/mais-produtos-servicos/transferencias-saques-e-depositos.shtm')
-    elif ('puta' in msg) or ('gorda' in msg) or ('comer' in msg) or ('gostosa' in msg):
+    elif ('gorda' in msg) or ('comer' in msg) or ('gostosa' in msg):
         lacração = choice(lacração)
         print(lacração)
         lacração = lr
