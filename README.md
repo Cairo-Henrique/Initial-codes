@@ -1,1 +1,1 @@
-# Initial-codes is a repository full of some of the programs i did as a hobby in my free time. These programs include games, math functionalities and exercises.
+**Initial-codes is a collection of small programs I wrote as a hobby during middle school. It includes simple games, mathematical utilities, and programming exercises created while I was learning to code.**
